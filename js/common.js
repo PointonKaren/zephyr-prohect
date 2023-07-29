@@ -33,6 +33,7 @@ const createNav = () => {
           <li><a href="../html/reglement.html#illegal">Illégal</a></li>
         </ul>
       <a href="../html/support.html">Support</a>
+      <a href="../html/staff.html">Le staff</a>
       <a href="../html/top-serveur.html">Top Serveur</a>
     </ul>
   `
@@ -52,5 +53,16 @@ const createFooter = () => {
   `
   );
 };
+
+const openPage = () => {
+  let searchBarValue = document.getElementById("searchbar").value;
+
+  if (searchBarValue === "coucou") {
+    console.log("coucou");
+  }
+};
+
+// TODO: Créer barre de recherche
+
 createNav();
 createFooter();
