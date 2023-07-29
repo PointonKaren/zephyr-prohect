@@ -16,30 +16,6 @@ const createElement = (elementType, elementParent, attributes = [], textContent 
   return element;
 };
 
-//* Nav commune à toutes les pages
-let header = document.querySelector("header");
-const createNav = () => {
-  createElement(
-    "nav",
-    header,
-    [],
-    `
-      <a href="../index.html">Accueil</a>
-      <a href="../html/infos.html">Infos</a>
-      <a href="../html/reglement.html">Règlement</a>
-        <ul>
-          <li><a href="../html/reglement.html#general">Général</a></li>
-          <li><a href="../html/reglement.html#legal">Légal</a></li>
-          <li><a href="../html/reglement.html#illegal">Illégal</a></li>
-        </ul>
-      <a href="../html/support.html">Support</a>
-      <a href="../html/staff.html">Le staff</a>
-      <a href="../html/top-serveur.html">Top Serveur</a>
-    </ul>
-  `
-  );
-};
-
 //* Footer commun à toutes les pages
 let footer = document.querySelector("footer");
 const createFooter = () => {
@@ -54,15 +30,4 @@ const createFooter = () => {
   );
 };
 
-const openPage = () => {
-  let searchBarValue = document.getElementById("searchbar").value;
-
-  if (searchBarValue === "coucou") {
-    console.log("coucou");
-  }
-};
-
-// TODO: Créer barre de recherche
-
-createNav();
 createFooter();
