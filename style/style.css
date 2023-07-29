@@ -18,11 +18,14 @@ footer {
   border-top-right-radius: 20px;
   box-shadow: 0 -2px 15px #6688e5;
 }
-footer p {
+footer #footer-copyright {
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
+}
+footer #footer-copyright .copyright-logo {
+  display: none;
 }
 
 header {
@@ -59,4 +62,13 @@ header nav ul {
 header nav ul li {
   margin-left: -30px;
   list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  footer #footer-copyright .copyright-text {
+    display: none;
+  }
+  footer #footer-copyright .copyright-logo {
+    display: inline;
+  }
 }/*# sourceMappingURL=style.css.map */

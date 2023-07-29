@@ -1,0 +1,15 @@
+@import "../Utils/mixins";
+@import "../Utils/variables";
+
+@media screen and (max-width: 600px) {
+  footer {
+    #footer-copyright {
+      .copyright-text {
+        display: none;
+      }
+      .copyright-logo {
+        display: inline;
+      }
+    }
+  }
+}

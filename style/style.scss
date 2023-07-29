@@ -14,6 +14,9 @@
 @import "./Layouts/header";
 
 // Responsive
+@import "./Responsive/desktop-4k";
+@import "./Responsive/mobile";
+@import "./Responsive/tablette";
 
 // Utils
 @import "./Utils/keyframes";

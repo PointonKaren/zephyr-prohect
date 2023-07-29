@@ -22,10 +22,10 @@ const createFooter = () => {
   createElement(
     "p",
     footer,
-    [{ name: "class", value: "footer-copyright" }],
+    [{ name: "id", value: "footer-copyright" }],
     `
   <span class="copyright-text"><span class="copyright">©</span>Copyright</span>
-  <span class="copyright-logo">©</span> - Zephyr Project - Tous droits réservés
+  <span class="copyright-logo">©</span> TinyNerak pour Zephyr Project - Tous droits réservés
   `
   );
 };
