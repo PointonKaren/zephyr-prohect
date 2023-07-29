@@ -1,1 +1,6 @@
 @import "variables";
+
+@mixin background-img {
+  background-attachment: fixed;
+  background-size: cover;
+}

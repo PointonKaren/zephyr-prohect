@@ -1,0 +1,40 @@
+@import "../../Utils/variables";
+@import "../../Utils/mixins";
+
+.section-staff {
+  .staff,
+  .staff-reversed {
+    margin: auto;
+    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    position: relative;
+    h3 {
+      position: absolute;
+      top: 0;
+    }
+    p {
+      width: 40vw;
+      text-align: justify;
+    }
+    img {
+      border: 2px solid $border;
+      border-radius: 150px;
+      -webkit-box-shadow: 0 0 30px $border;
+      box-shadow: 0 0 30px $border;
+    }
+  }
+  .staff-reversed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}

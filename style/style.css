@@ -7,6 +7,24 @@ body {
   background-color: #0e0e47;
   margin-bottom: 50px;
 }
+body main section {
+  width: 80vw;
+  margin: auto;
+  margin-top: 30px;
+  background: url(./images/vinewood.jpg) no-repeat top;
+  background-attachment: fixed;
+  background-size: cover;
+  border: 1px solid #6688e5;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #6688e5;
+  padding-bottom: 30px;
+}
+body main section h2 {
+  margin-left: 20px;
+}
+body main section h3 {
+  margin-left: 40px;
+}
 
 footer {
   position: fixed;
@@ -62,6 +80,35 @@ header nav ul {
 header nav ul li {
   margin-left: -30px;
   list-style: none;
+}
+
+.section-staff .staff,
+.section-staff .staff-reversed {
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.section-staff .staff h3,
+.section-staff .staff-reversed h3 {
+  position: absolute;
+  top: 0;
+}
+.section-staff .staff p,
+.section-staff .staff-reversed p {
+  width: 40vw;
+  text-align: justify;
+}
+.section-staff .staff img,
+.section-staff .staff-reversed img {
+  border: 2px solid #6688e5;
+  border-radius: 150px;
+  box-shadow: 0 0 30px #6688e5;
+}
+.section-staff .staff-reversed {
+  flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 600px) {

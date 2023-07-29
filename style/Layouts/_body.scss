@@ -5,4 +5,24 @@ body {
   margin: 0;
   background-color: $bg;
   margin-bottom: 50px;
+  main {
+    section {
+      width: 80vw;
+      margin: auto;
+      margin-top: 30px;
+      background: url(./images/vinewood.jpg) no-repeat top;
+      @include background-img;
+      border: 1px solid $border;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 0 30px $border;
+      box-shadow: 0 0 30px $border;
+      padding-bottom: 30px;
+      h2 {
+        margin-left: 20px;
+      }
+      h3 {
+        margin-left: 40px;
+      }
+    }
+  }
 }
