@@ -4,3 +4,8 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
+@mixin blur {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+}

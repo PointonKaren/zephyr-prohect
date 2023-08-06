@@ -16,12 +16,22 @@ body {
       border-radius: 10px;
       -webkit-box-shadow: 0 0 30px $border;
       box-shadow: 0 0 30px $border;
-      padding-bottom: 30px;
+      // padding-bottom: 30px;
       h2 {
         margin-left: 20px;
+        font-size: 2em;
       }
       h3 {
         margin-left: 40px;
+        font-size: 1.5em;
+      }
+      h4 {
+        margin-left: 50px;
+        font-size: 1.2em;
+      }
+      p {
+        margin-left: 30px;
+        font-size: 1.2em;
       }
     }
   }

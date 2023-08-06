@@ -1,5 +1,14 @@
 * {
   color: #5fc8fa;
+  text-shadow: 3px 3px 5px #6688e5;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  padding-top: 2px;
+  padding-bottom: 20px;
+  border-radius: 10px;
 }
 
 body {
@@ -17,13 +26,22 @@ body main section {
   border: 1px solid #6688e5;
   border-radius: 10px;
   box-shadow: 0 0 30px #6688e5;
-  padding-bottom: 30px;
 }
 body main section h2 {
   margin-left: 20px;
+  font-size: 2em;
 }
 body main section h3 {
   margin-left: 40px;
+  font-size: 1.5em;
+}
+body main section h4 {
+  margin-left: 50px;
+  font-size: 1.2em;
+}
+body main section p {
+  margin-left: 30px;
+  font-size: 1.2em;
 }
 
 footer {
@@ -62,6 +80,7 @@ header h1 {
   vertical-align: middle;
   text-align: center;
   margin: 0;
+  font-size: 3em;
 }
 header nav {
   position: absolute;
@@ -72,10 +91,19 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+header nav a {
+  font-size: 1.2em;
+  transition: font-size 300ms, color 300ms;
+  text-decoration: none;
+}
+header nav a:hover {
+  font-size: 1.5em;
+  color: #6a6ad2;
+}
 header nav ul {
   border-left: 1px solid #6688e5;
   margin: 0;
-  margin-left: -70px;
+  margin-left: -30px;
 }
 header nav ul li {
   margin-left: -30px;
@@ -90,11 +118,7 @@ header nav ul li {
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-}
-.section-staff .staff h3,
-.section-staff .staff-reversed h3 {
-  position: absolute;
-  top: 0;
+  padding-bottom: 20px;
 }
 .section-staff .staff p,
 .section-staff .staff-reversed p {

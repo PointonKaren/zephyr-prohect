@@ -17,6 +17,7 @@ header {
     vertical-align: middle;
     text-align: center;
     margin: 0;
+    font-size: 3em;
   }
   nav {
     position: absolute;
@@ -32,10 +33,21 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    a {
+      font-size: 1.2em;
+      -webkit-transition: font-size 300ms, color 300ms;
+      -o-transition: font-size 300ms, color 300ms;
+      transition: font-size 300ms, color 300ms;
+      text-decoration: none;
+      &:hover {
+        font-size: 1.5em;
+        color: $quatre;
+      }
+    }
     ul {
       border-left: 1px solid $border;
       margin: 0;
-      margin-left: -70px;
+      margin-left: -30px;
       li {
         margin-left: -30px;
         list-style: none;
