@@ -157,7 +157,6 @@ header nav ul li {
 }
 
 main #sommaire {
-  width: 45vw;
   animation: sommaire-pop 2s ease 0s 1 normal forwards;
 }
 main #sommaire .blur {
