@@ -24,12 +24,35 @@ const createFooter = () => {
     footer,
     [{ name: "id", value: "footer-copyright" }],
     `
-  <span class="copyright-text"><span class="copyright">©</span>Copyright</span>
-  <span class="copyright-logo">©</span> TinyNerak pour Zephyr Project - Tous droits réservés
-  `
+    <span class="copyright-text"><span class="copyright">©</span>Copyright</span>
+    <span class="copyright-logo">©</span> TinyNerak pour Zephyr Project - Tous droits réservés
+    `
   );
 };
 
+//* Permet de rendre fonctionnelle la flèche "up"
+// Quand on clique sur le bouton (cf onclick html), on remonte au "top" défini ci-dessous :
+const goToTop = () => {
+  let top;
+
+  if (window.innerWidth >= 1201) {
+    // Format desktop : > 1200px
+    top = 0;
+  } else if (window.innerWidth < 1200 && window.innerWidth > 601) {
+    // Format tablette : < 1200
+    top = 0;
+  } else if (window.innerWidth < 600) {
+    top = 0;
+  }
+
+  window.scrollTo({
+    top: top,
+    left: 0,
+    behavior: "smooth",
+  });
+};
+
+//* Ouvre les menus accordéons
 // Permet de sélectionner et cacher tous éléments à masquer dans l'accordéon
 let subcategories = document.querySelectorAll(".accordion-category__subcategory");
 for (let subcategory of subcategories) {
