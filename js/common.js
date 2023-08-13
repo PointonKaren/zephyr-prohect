@@ -30,4 +30,31 @@ const createFooter = () => {
   );
 };
 
+// Permet de sélectionner et cacher tous éléments à masquer dans l'accordéon
+let subcategories = document.querySelectorAll(".accordion-category__subcategory");
+for (let subcategory of subcategories) {
+  subcategory.style.display = "none";
+}
+
+//Permet de sélectionner tous les boutons ayant la class unfold
+//pour afficher/masquer leurs enfants
+let unfolds = document.getElementsByClassName("unfold");
+
+// Pour chaque bouton, on ajoute un event listener au clic
+// Cet event listener va masquer/afficher le contenu de l'accordéon
+for (let unfold of unfolds) {
+  unfold.addEventListener("click", function () {
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      this.firstChild.classList.add("fa-chevron-left");
+      this.firstChild.classList.remove("fa-chevron-down");
+    } else {
+      panel.style.display = "block";
+      this.firstChild.classList.add("fa-chevron-down");
+      this.firstChild.classList.remove("fa-chevron-left");
+    }
+  });
+}
+
 createFooter();
