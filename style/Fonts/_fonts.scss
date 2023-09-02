@@ -5,10 +5,14 @@
   color: $text;
   text-shadow: 3px 3px 5px $textshadow;
 }
-
-.blur {
-  @include blur;
-  padding-top: 2px;
-  padding-bottom: 20px;
-  border-radius: 10px;
+h1,
+h2 {
+  color: $huit;
+  text-shadow: 3px 3px 5px $trois;
+}
+.sommaire__tile {
+  h3 {
+    color: $huit;
+    text-shadow: 3px 3px 5px $trois;
+  }
 }

@@ -21,6 +21,12 @@ body {
       -webkit-box-shadow: 0 0 30px $border;
       box-shadow: 0 0 30px $border;
       // padding-bottom: 30px;
+      .blur {
+        @include blur;
+        padding-top: 2px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+      }
       h2 {
         margin-left: 20px;
         font-size: 2em;

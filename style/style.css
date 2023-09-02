@@ -3,12 +3,15 @@
   text-shadow: 3px 3px 5px #6688e5;
 }
 
-.blur {
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(10px);
-  padding-top: 2px;
-  padding-bottom: 20px;
-  border-radius: 10px;
+h1,
+h2 {
+  color: #9371c0;
+  text-shadow: 3px 3px 5px #172cad;
+}
+
+.sommaire__tile h3 {
+  color: #9371c0;
+  text-shadow: 3px 3px 5px #172cad;
 }
 
 html {
@@ -30,6 +33,13 @@ body main section {
   border: 1px solid #6688e5;
   border-radius: 10px;
   box-shadow: 0 0 30px #6688e5;
+}
+body main section .blur {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  padding-top: 2px;
+  padding-bottom: 20px;
+  border-radius: 10px;
 }
 body main section h2 {
   margin-left: 20px;
@@ -227,6 +237,13 @@ main .section_reglement-div {
   width: 60vw;
   text-align: left;
   margin: auto;
+}
+
+body main #top-serveur .blur {
+  padding: 0;
+}
+body main #top-serveur .blur p {
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
