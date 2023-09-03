@@ -147,29 +147,11 @@ header nav ul li {
   list-style: none;
 }
 
-.section-staff .staff,
-.section-staff .staff-reversed {
-  margin: auto;
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  padding-bottom: 20px;
+body main #top-serveur .blur {
+  padding: 0;
 }
-.section-staff .staff p,
-.section-staff .staff-reversed p {
-  width: 40vw;
-  text-align: justify;
-}
-.section-staff .staff img,
-.section-staff .staff-reversed img {
-  border: 2px solid #7fd6f9;
-  border-radius: 150px;
-  box-shadow: 0 0 30px #7fd6f9;
-}
-.section-staff .staff-reversed {
-  flex-direction: row-reverse;
+body main #top-serveur .blur p {
+  text-align: center;
 }
 
 main #sommaire .blur {
@@ -239,6 +221,30 @@ main .section_reglement-div {
   width: 60vw;
   text-align: left;
   margin: auto;
+}
+
+.section-staff h2 {
+  text-align: center;
+}
+.section-staff .staff,
+.section-staff .staff-reversed {
+  margin: auto;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.section-staff .staff img,
+.section-staff .staff-reversed img {
+  border: 2px solid #7fd6f9;
+  border-radius: 150px;
+  box-shadow: 0 0 30px #7fd6f9;
+}
+.section-staff .staff-reversed {
+  flex-direction: row-reverse;
 }
 
 body main #top-serveur .blur {

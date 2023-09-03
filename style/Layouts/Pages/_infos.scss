@@ -1,0 +1,15 @@
+@import "../../Utils/variables";
+@import "../../Utils/mixins";
+
+body {
+  main {
+    #top-serveur {
+      .blur {
+        padding: 0;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
