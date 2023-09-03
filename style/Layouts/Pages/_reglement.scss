@@ -26,7 +26,6 @@ main {
           transition: font-size 300ms, color 300ms;
           &:hover {
             font-size: 1.2em;
-            // color: red;
             text-shadow: 2px 3px 8px $neuf;
           }
         }

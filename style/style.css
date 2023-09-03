@@ -160,9 +160,9 @@ body main section .blur .fa-discord {
   border-radius: 50px;
   color: white;
   padding-left: 6px;
-  padding-right: 5px;
+  padding-right: 6px;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
   margin-left: 3px;
 }
 
@@ -260,10 +260,19 @@ main .section_reglement-div {
 }
 
 body main #top-serveur .blur {
-  padding: 0;
+  padding-bottom: 20px;
+}
+body main #top-serveur .blur h2 {
+  text-align: center;
 }
 body main #top-serveur .blur p {
   text-align: center;
+}
+body main #top-serveur .blur h3 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  text-shadow: none;
 }
 body main #top-serveur .blur .top-serveur {
   display: block;
@@ -274,6 +283,12 @@ body main #top-serveur .blur .top-serveur {
   width: 250px;
   border: 1px solid #7fd6f9;
   border-radius: 50px;
+  background-color: #0e0e47;
+  box-shadow: 0 0 20px #4485e2;
+  font-size: 1.2em;
+}
+body main #top-serveur .blur .top-serveur a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
