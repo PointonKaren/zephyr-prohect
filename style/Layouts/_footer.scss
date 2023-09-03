@@ -18,8 +18,8 @@ footer {
     cursor: pointer;
     border-radius: 50px;
     border: 1px solid $border;
-    -webkit-box-shadow: 0 -2px 15px $border;
-    box-shadow: 0 -2px 15px $border;
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
     .arrow-up-icon {
       font-size: 1.2em;
       padding: 0;
@@ -27,6 +27,7 @@ footer {
       padding-left: 9px;
       padding-right: 9px;
       margin: 10px 3px;
+      text-shadow: none;
     }
   }
   #footer-copyright {

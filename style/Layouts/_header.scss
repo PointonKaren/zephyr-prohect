@@ -3,17 +3,17 @@
 
 header {
   background: url(./images/banner.jpg) no-repeat top;
-  height: 300px;
+  height: 200px;
   max-width: 1920px;
   margin: auto;
   position: relative;
-  border-bottom: 3px solid $border;
-  -webkit-box-shadow: 0 2px 15px $border;
-  box-shadow: 0 2px 15px $border;
+  border-bottom: 2px solid $border;
+  -webkit-box-shadow: 0 2px 20px $border-shadow;
+  box-shadow: 0 2px 20px $border-shadow;
   h1 {
     width: 100%;
     height: 100%;
-    line-height: 300px;
+    line-height: 200px;
     vertical-align: middle;
     text-align: center;
     margin: 0;
@@ -21,9 +21,9 @@ header {
   }
   nav {
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 10px;
-    width: 42vw;
+    width: 35vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -45,9 +45,9 @@ header {
       }
     }
     ul {
-      border-left: 1px solid $border;
+      border-left: 2px dotted $border;
       margin: 0;
-      margin-left: -30px;
+      margin-left: -10px;
       li {
         margin-left: -30px;
         list-style: none;
