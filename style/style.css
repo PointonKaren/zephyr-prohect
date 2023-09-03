@@ -46,6 +46,13 @@ body main section .blur {
   padding-bottom: 20px;
   border-radius: 10px;
 }
+body main section .blur .important {
+  color: #6a6ad2;
+  text-shadow: 3px 3px 5px #6a6ad2;
+}
+body main section .blur .smiley {
+  text-shadow: none;
+}
 body main section h2 {
   margin-left: 20px;
   font-size: 2em;
@@ -147,11 +154,16 @@ header nav ul li {
   list-style: none;
 }
 
-body main #top-serveur .blur {
-  padding: 0;
-}
-body main #top-serveur .blur p {
-  text-align: center;
+body main section .blur .fa-discord {
+  border: 1px solid #5662f6;
+  background-color: #5662f6;
+  border-radius: 50px;
+  color: white;
+  padding-left: 6px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-left: 3px;
 }
 
 main #sommaire .blur {
@@ -252,6 +264,16 @@ body main #top-serveur .blur {
 }
 body main #top-serveur .blur p {
   text-align: center;
+}
+body main #top-serveur .blur .top-serveur {
+  display: block;
+  text-align: center;
+  margin: auto;
+  height: 40px;
+  line-height: 40px;
+  width: 250px;
+  border: 1px solid #7fd6f9;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 600px) {

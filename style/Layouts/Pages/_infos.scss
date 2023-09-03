@@ -3,11 +3,18 @@
 
 body {
   main {
-    #top-serveur {
+    section {
       .blur {
-        padding: 0;
-        p {
-          text-align: center;
+        .fa-discord {
+          border: 1px solid $discord;
+          background-color: $discord;
+          border-radius: 50px;
+          color: white;
+          padding-left: 6px;
+          padding-right: 5px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          margin-left: 3px;
         }
       }
     }

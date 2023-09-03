@@ -9,6 +9,16 @@ body {
         p {
           text-align: center;
         }
+        .top-serveur {
+          display: block;
+          text-align: center;
+          margin: auto;
+          height: 40px;
+          line-height: 40px;
+          width: 250px;
+          border: 1px solid $border;
+          border-radius: 50px;
+        }
       }
     }
   }
