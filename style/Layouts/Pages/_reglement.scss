@@ -3,8 +3,6 @@
 
 main {
   #sommaire {
-    -webkit-animation: sommaire-pop 2s ease 0s 1 normal forwards;
-    animation: sommaire-pop 2s ease 0s 1 normal forwards;
     .blur {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -14,9 +12,6 @@ main {
         text-align: center;
         margin: auto;
         margin-top: 20px;
-        -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-        transform: scale(0);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         a {
@@ -37,28 +32,23 @@ main {
       }
       .sommaire__general {
         grid-area: 2 / 1 / 3 / 2;
-        -webkit-animation: sommaire-slide 2s ease 1.4s 1 normal forwards;
-        animation: sommaire-slide 2s ease 1.4s 1 normal forwards;
+        -webkit-animation: slide_left 1s ease 0s 1 normal forwards;
+        animation: slide_left 1s ease 0s 1 normal forwards;
       }
       .sommaire__legal {
         grid-area: 2 / 2 / 3 / 3;
-        -webkit-animation: sommaire-slide 1.4s forwards 1s;
-        animation: sommaire-slide 1.4s forwards 3s;
+        -webkit-animation: slide_bottom 1s ease 0s 1 normal forwards;
+        animation: slide_bottom 1s ease 0s 1 normal forwards;
       }
       .sommaire__illegal {
         grid-area: 2 / 3 / 3 / 4;
-        -webkit-animation: sommaire-slide 1.4s forwards 2s;
-        animation: sommaire-slide 1.4s forwards 4s;
+        -webkit-animation: slide_right 1s ease 0s 1 normal forwards;
+        animation: slide_right 1s ease 0s 1 normal forwards;
       }
     }
   }
   .section_reglement {
     text-align: center;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-animation: section-pop 2.5s ease 1s 1 normal forwards;
-    animation: section-pop 2.5s ease 1s 1 normal forwards;
     .blur {
       h2 {
         margin-left: 0;
@@ -70,6 +60,32 @@ main {
             h3 {
               margin-left: 0;
               text-align: center;
+            }
+            #lexique,
+            #mort-rp,
+            #coma,
+            #civil,
+            #ems,
+            #criminel,
+            #orga {
+              -webkit-animation: slide_right 1s ease 0s 1 normal forwards;
+              animation: slide_right 1s ease 0s 1 normal forwards;
+              + .unfold {
+                -webkit-animation: slide_right 1s ease 0s 1 normal forwards;
+                animation: slide_right 1s ease 0s 1 normal forwards;
+              }
+            }
+            #interdictions,
+            #zone-safe,
+            #lspd,
+            #entreprise,
+            #gangs {
+              -webkit-animation: slide_left 1s ease 0s 1 normal forwards;
+              animation: slide_left 1s ease 0s 1 normal forwards;
+              + .unfold {
+                -webkit-animation: slide_left 1s ease 0s 1 normal forwards;
+                animation: slide_left 1s ease 0s 1 normal forwards;
+              }
             }
             position: relative;
             .unfold {

@@ -22,6 +22,7 @@ h4 {
 .important {
   color: #b2b1f0;
   text-shadow: 3px 3px 5px #4747c5;
+  text-decoration: none;
 }
 
 .sommaire__tile h3 {
@@ -48,7 +49,7 @@ body main section {
   width: 80vw;
   margin: auto;
   margin-top: 30px;
-  background: url(./images/vinewood.jpg) no-repeat top;
+  background: url(./images/vinewood.jpg);
   background-attachment: fixed;
   background-size: cover;
   border: 1px solid #7fd6f9;
@@ -185,9 +186,6 @@ body main section .blur .fa-discord {
   margin-left: 3px;
 }
 
-main #sommaire {
-  animation: sommaire-pop 2s ease 0s 1 normal forwards;
-}
 main #sommaire .blur {
   display: flex;
   overflow: hidden;
@@ -196,7 +194,6 @@ main #sommaire .blur .sommaire__tile {
   text-align: center;
   margin: auto;
   margin-top: 20px;
-  transform: scale(0);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -215,20 +212,18 @@ main #sommaire .blur .sommaire__tile h4 {
 }
 main #sommaire .blur .sommaire__general {
   grid-area: 2/1/3/2;
-  animation: sommaire-slide 2s ease 1.4s 1 normal forwards;
+  animation: slide_left 1s ease 0s 1 normal forwards;
 }
 main #sommaire .blur .sommaire__legal {
   grid-area: 2/2/3/3;
-  animation: sommaire-slide 1.4s forwards 3s;
+  animation: slide_bottom 1s ease 0s 1 normal forwards;
 }
 main #sommaire .blur .sommaire__illegal {
   grid-area: 2/3/3/4;
-  animation: sommaire-slide 1.4s forwards 4s;
+  animation: slide_right 1s ease 0s 1 normal forwards;
 }
 main .section_reglement {
   text-align: center;
-  transform: scale(0);
-  animation: section-pop 2.5s ease 1s 1 normal forwards;
 }
 main .section_reglement .blur h2 {
   margin-left: 0;
@@ -240,6 +235,38 @@ main .section_reglement .blur .accordion-category article {
 main .section_reglement .blur .accordion-category article h3 {
   margin-left: 0;
   text-align: center;
+}
+main .section_reglement .blur .accordion-category article #lexique,
+main .section_reglement .blur .accordion-category article #mort-rp,
+main .section_reglement .blur .accordion-category article #coma,
+main .section_reglement .blur .accordion-category article #civil,
+main .section_reglement .blur .accordion-category article #ems,
+main .section_reglement .blur .accordion-category article #criminel,
+main .section_reglement .blur .accordion-category article #orga {
+  animation: slide_right 1s ease 0s 1 normal forwards;
+}
+main .section_reglement .blur .accordion-category article #lexique + .unfold,
+main .section_reglement .blur .accordion-category article #mort-rp + .unfold,
+main .section_reglement .blur .accordion-category article #coma + .unfold,
+main .section_reglement .blur .accordion-category article #civil + .unfold,
+main .section_reglement .blur .accordion-category article #ems + .unfold,
+main .section_reglement .blur .accordion-category article #criminel + .unfold,
+main .section_reglement .blur .accordion-category article #orga + .unfold {
+  animation: slide_right 1s ease 0s 1 normal forwards;
+}
+main .section_reglement .blur .accordion-category article #interdictions,
+main .section_reglement .blur .accordion-category article #zone-safe,
+main .section_reglement .blur .accordion-category article #lspd,
+main .section_reglement .blur .accordion-category article #entreprise,
+main .section_reglement .blur .accordion-category article #gangs {
+  animation: slide_left 1s ease 0s 1 normal forwards;
+}
+main .section_reglement .blur .accordion-category article #interdictions + .unfold,
+main .section_reglement .blur .accordion-category article #zone-safe + .unfold,
+main .section_reglement .blur .accordion-category article #lspd + .unfold,
+main .section_reglement .blur .accordion-category article #entreprise + .unfold,
+main .section_reglement .blur .accordion-category article #gangs + .unfold {
+  animation: slide_left 1s ease 0s 1 normal forwards;
 }
 main .section_reglement .blur .accordion-category article .unfold {
   position: absolute;
@@ -330,83 +357,33 @@ body main #top-serveur .blur .top-serveur a {
     display: inline;
   }
 }
-@keyframes sommaire-slide {
+@keyframes slide_left {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateX(-180px);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-@keyframes sommaire-pop {
+@keyframes slide_bottom {
   0% {
-    animation-timing-function: ease-in;
     opacity: 0;
-    transform: scale(0);
-  }
-  38% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: scale(1);
-  }
-  55% {
-    animation-timing-function: ease-in;
-    transform: scale(0.7);
-  }
-  72% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-  81% {
-    animation-timing-function: ease-in;
-    transform: scale(0.84);
-  }
-  89% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-  95% {
-    animation-timing-function: ease-in;
-    transform: scale(0.95);
+    transform: translateY(150px);
   }
   100% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-@keyframes section-pop {
+@keyframes slide_right {
   0% {
-    animation-timing-function: ease-in;
     opacity: 0;
-    transform: scale(0);
-  }
-  38% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: scale(1);
-  }
-  55% {
-    animation-timing-function: ease-in;
-    transform: scale(0.7);
-  }
-  72% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-  81% {
-    animation-timing-function: ease-in;
-    transform: scale(0.84);
-  }
-  89% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-  95% {
-    animation-timing-function: ease-in;
-    transform: scale(0.95);
+    transform: translateX(180px);
   }
   100% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
+    opacity: 1;
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=style.css.map */
