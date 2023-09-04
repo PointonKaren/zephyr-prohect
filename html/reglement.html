@@ -12,21 +12,36 @@
   <body>
     <header>
       <nav>
-        <a href="../index.html">Accueil</a>
-        <a href="../html/infos.html">Infos</a>
-        <a href="../html/reglement.html">Règlement</a>
-        <ul>
+        <a href="../index.html"
+          ><i class="fa-solid fa-house ondesktop-hidden"></i
+          ><span class="onphone-hidden">Accueil</span>
+        </a>
+        <a href="../html/infos.html"
+          ><i class="fa-solid fa-circle-info ondesktop-hidden"></i
+          ><span class="onphone-hidden">Infos</span></a
+        >
+        <a href="../html/reglement.html"
+          ><i class="fa-solid fa-book ondesktop-hidden"></i
+          ><span class="onphone-hidden">Règlement</span></a
+        >
+        <ul class="onphone-hidden">
           <li><a href="../html/reglement.html#general">Général</a></li>
           <li><a href="../html/reglement.html#legal">Légal</a></li>
           <li><a href="../html/reglement.html#illegal">Illégal</a></li>
         </ul>
-        <a href="../html/staff.html">Le staff</a>
-        <a href="../html/top-serveur.html">Top Serveur</a>
+        <a href="../html/staff.html"
+          ><i class="fa-solid fa-users ondesktop-hidden"></i
+          ><span class="onphone-hidden">Le staff</span></a
+        >
+        <a href="../html/top-serveur.html"
+          ><i class="fa-solid fa-check-to-slot ondesktop-hidden"></i
+          ><span class="onphone-hidden">Top Serveur</span></a
+        >
       </nav>
       <h1>Règlement</h1>
     </header>
     <main>
-      <section id="sommaire">
+      <section id="sommaire" class="onphone-hidden">
         <div class="blur">
           <div class="sommaire__tile sommaire__general">
             <a href="../html/reglement.html#general"><h3>Général</h3></a>
@@ -51,7 +66,7 @@
           </div>
         </div>
       </section>
-      <section id="general" class="section_reglement">
+      <section id="general" class="section_reglement onphone-hidden">
         <div class="blur">
           <h2>Général</h2>
           <div class="accordion">
@@ -202,7 +217,7 @@
           </div>
         </div>
       </section>
-      <section id="legal" class="section_reglement">
+      <section id="legal" class="section_reglement onphone-hidden">
         <div class="blur">
           <h2>Légal</h2>
           <div class="accordion">
@@ -349,7 +364,7 @@
           </div>
         </div>
       </section>
-      <section id="illegal" class="section_reglement">
+      <section id="illegal" class="section_reglement onphone-hidden">
         <div class="blur">
           <div class="accordion">
             <div class="accordion-category">
@@ -445,6 +460,16 @@
               </article>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="anti-cheat" class="section_reglement">
+        <div class="blur">
+          <h2>Filtre anti-triche</h2>
+          <p>
+            Afin d'éviter toute triche lors des douanes, le règlement n'est accessible ni sur
+            smartphone, ni sur tablette...
+          </p>
+          <p>On vous connait, bande de petits filous <span class="smiley">😜</span></p>
         </div>
       </section>
     </main>

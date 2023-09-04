@@ -12,44 +12,60 @@
   <body>
     <header>
       <nav>
-        <a href="../index.html">Accueil</a>
-        <a href="../html/infos.html">Infos</a>
-        <a href="../html/reglement.html">Règlement</a>
-        <ul>
+        <a href="../index.html"
+          ><i class="fa-solid fa-house ondesktop-hidden"></i
+          ><span class="onphone-hidden">Accueil</span>
+        </a>
+        <a href="../html/infos.html"
+          ><i class="fa-solid fa-circle-info ondesktop-hidden"></i
+          ><span class="onphone-hidden">Infos</span></a
+        >
+        <a href="../html/reglement.html"
+          ><i class="fa-solid fa-book ondesktop-hidden"></i
+          ><span class="onphone-hidden">Règlement</span></a
+        >
+        <ul class="onphone-hidden">
           <li><a href="../html/reglement.html#general">Général</a></li>
           <li><a href="../html/reglement.html#legal">Légal</a></li>
           <li><a href="../html/reglement.html#illegal">Illégal</a></li>
         </ul>
-        <a href="../html/staff.html">Le staff</a>
-        <a href="../html/top-serveur.html">Top Serveur</a>
+        <a href="../html/staff.html"
+          ><i class="fa-solid fa-users ondesktop-hidden"></i
+          ><span class="onphone-hidden">Le staff</span></a
+        >
+        <a href="../html/top-serveur.html"
+          ><i class="fa-solid fa-check-to-slot ondesktop-hidden"></i
+          ><span class="onphone-hidden">Top Serveur</span></a
+        >
       </nav>
       <h1>Infos</h1>
     </header>
     <main>
-      <section>
+      <section id="guide-debutant">
         <div class="blur">
-          <h2>Guide du débutant</h2>
+          <h2 class="onphone-hidden">Guide du débutant</h2>
           <h3>Bien commencer sur Zephyr Project</h3>
-          <p>
+          <p class="onphone-hidden">
             Lorsqu'on arrive sur un nouveau serveur GTA RP, il est courant d'être un peu perdu et de
             ne pas savoir par quoi commencer. <br />Ce guide du débutant permet à tous les joueurs -
             rôliste aguerri comme débutant dans le monde du RP - de trouver réponses à ses questions
             et de se sentir rapidement à l'aise et intégré(e) sur Zephyr Project.
           </p>
           <h4>Récupérer sa carte d'identité</h4>
-          <p>
-            La carte d'identité est obligatoire, ne pas l'avoir sur soi lors d'un contrôle de police
-            peut mener à une amende. <br />Vous pouvez la récupérer au
-            <span class="important">Gouvernement</span
+          <p class="border-bottom">
+            <span class="onphone-hidden"
+              >La carte d'identité est obligatoire, ne pas l'avoir sur soi lors d'un contrôle de
+              police peut mener à une amende. <br /> </span
+            >Vous pouvez la récupérer au <span class="important">Gouvernement</span
             ><img src="../style/images/tuto/gouvernement.png" alt="blip du Gouvernement" />.
           </p>
           <h4>Acheter un téléphone</h4>
-          <p>
+          <p class="border-bottom">
             Vous pouvez acheter un téléphone à la boutique
             <span class="important">"Digital Den"</span>
             <img src="../style/images/tuto/shop.png" alt="blip d'une boutique" />.
           </p>
-          <h4>Trouver un petit boulot</h4>
+          <h4>Petits boulots</h4>
           <h5>Miner & fondre les minerais</h5>
           <p>
             Vous pouvez trouver des ressources à la <span class="important">mine</span>
@@ -59,27 +75,32 @@
           </p>
           <h5>Recycler des matériaux</h5>
           <p>
-            Vous pouvez également vous faire de l'argent en recyclant des matériaux.
-            <br />Dans un premier temps il vous faudra <span class="important">recycler</span>
-            <img src="../style/images/tuto/recyclage.png" alt="blip du lieu recyclage" /> des
-            matériaux. <br />Ensuite, vous devrez les recycler au
+            <span class="onphone-hidden"
+              >Vous pouvez également vous faire de l'argent en recyclant des matériaux. <br /></span
+            >Une fois encore, les ressources sont à <span class="important">récupérer</span>
+            <img src="../style/images/tuto/recyclage.png" alt="blip du lieu recyclage" /> puis à
+            recycler au
             <span class="important">centre de recyclage</span>
             <img
               src="../style/images/tuto/traitement-recyclage.png"
               alt="blip du lieu 'traitement de recyclage'"
-            />. <br />Enfin, vous pourrez vendre les matériaux recyclés à l'exportateur
+            />.
+          </p>
+          <h5>Vendre les ressources</h5>
+          <p class="border-bottom">
+            Une fois les ressources (minerais & matériaux) traitées, vous pouvez les vendre à
+            l'exportateur
             <img src="../style/images/tuto/exportateur.png" alt="blip du lieu 'exportateur'" />.
           </p>
-
           <h4>Se restaurer</h4>
-          <p>
-            Vous pouvez vous restaurer (acheter à boire et à manger) au restaurant le
+          <p class="border-bottom">
+            Vous pouvez acheter à boire et à manger au restaurant le
             <span class="important">Horny's Burgers</span>
             <img src="../style/images/tuto/hornys.png" alt="blip du Horny's Burgers" /> ou dans les
             supérettes <img src="../style/images/tuto/shop.png" alt="blip d'une boutique" />.
           </p>
           <h4>Se déplacer</h4>
-          <p>
+          <p class="border-bottom">
             Pour vous déplacer vous pouvez :
             <br />-
             <span class="important">louer un véhicule</span>
@@ -89,12 +110,12 @@
             <br />
             - ou acheter un véhicule au <span class="important">concessionnaire</span>
             <img src="../style/images/tuto/concessionnaire.png" alt="blip du concessionnaire" /> (en
-            ayant passé le <span class="important">permis</span>
-            <img src="../style/images/tuto/auto-ecole.png" alt="blip de l'Auto-école" /> évidemment
+            ayant bien évidemment passé le <span class="important">permis</span>
+            <img src="../style/images/tuto/auto-ecole.png" alt="blip de l'Auto-école" />
             <span class="smiley">😉</span>)
           </p>
-          <h4>Trouver un emploi</h4>
-          <p>
+          <h4 class="onphone-hidden">Trouver un emploi</h4>
+          <p class="onphone-hidden">
             Pour trouver un emploi durable, il suffit de consulter les
             <a
               href="https://discord.com/channels/990254423164993617/996070819103002644"
@@ -106,7 +127,7 @@
           </p>
           <h3>Rencontrer du monde</h3>
           <h4>Participer aux évènements</h4>
-          <p>
+          <p class="border-bottom">
             L'un des meilleurs moyens pour rencontrer du monde est de participer aux évènements
             légaux organisés sur le serveur.
           </p>
