@@ -17,7 +17,7 @@ const createElement = (elementType, elementParent, attributes = [], textContent 
 };
 
 //* Footer commun à toutes les pages
-// let footer = document.querySelector("footer");
+let footer = document.querySelector("footer");
 // const createFooter = () => {
 //   createElement(
 //     "p",
@@ -68,16 +68,17 @@ let unfolds = document.getElementsByClassName("unfold");
 for (let unfold of unfolds) {
   unfold.addEventListener("click", function () {
     let panel = this.nextElementSibling;
+    let chevron = this.firstChild.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
-      this.firstChild.classList.add("fa-chevron-left");
-      this.firstChild.classList.remove("fa-chevron-down");
+      chevron.classList.add("fa-chevron-left");
+      chevron.classList.remove("fa-chevron-down");
     } else {
       panel.style.display = "block";
-      this.firstChild.classList.add("fa-chevron-down");
-      this.firstChild.classList.remove("fa-chevron-left");
+      chevron.classList.add("fa-chevron-down");
+      chevron.classList.remove("fa-chevron-left");
     }
   });
 }
 
-createFooter();
+// createFooter();
