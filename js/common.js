@@ -49,8 +49,8 @@ for (let subcategory of subcategories) {
 //pour afficher/masquer leurs enfants
 let unfolds = document.getElementsByClassName("unfold");
 
-// Pour chaque bouton, on ajoute un event listener au clic
-// Cet event listener va masquer/afficher le contenu de l'accordéon
+// Pour chaque bouton "unfold" :
+// on ajoute un event listener au clic qui va masquer/afficher le contenu de l'accordéon
 for (let unfold of unfolds) {
   unfold.addEventListener("click", function () {
     let panel = this.nextElementSibling;
@@ -65,6 +65,12 @@ for (let unfold of unfolds) {
       chevron.classList.remove("fa-chevron-left");
     }
   });
+  // Si la taille de la fenêtre varie entre 1201 et 1500 px les boutons sont décalés pour ne pas couvrir le texte
+  if (window.innerWidth >= 1201 && window.innerWidth <= 1500) {
+    unfold.style.right = "450px";
+  } else {
+    unfold.style.right = "590px";
+  }
 }
 
 // createFooter();
