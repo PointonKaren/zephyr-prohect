@@ -280,7 +280,7 @@ main .section_reglement .blur .accordion-category article #gangs + .unfold {
 main .section_reglement .blur .accordion-category article .unfold {
   position: absolute;
   top: 0;
-  right: 590px;
+  right: 400px;
   width: 30px;
   height: 30px;
   background-color: #0e0e47;
