@@ -1,0 +1,129 @@
+@import "../../Utils/variables";
+@import "../../Utils/mixins";
+
+main {
+  #sommaire {
+    .blur {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
+      .sommaire__tile {
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        a {
+          text-decoration: none;
+          -webkit-transition: font-size 300ms, color 300ms;
+          -o-transition: font-size 300ms, color 300ms;
+          transition: font-size 300ms, color 300ms;
+          font-size: 1.1em;
+          &:hover {
+            font-size: 1.3em;
+            text-shadow: 2px 3px 8px $neuf;
+          }
+        }
+        h3,
+        h4 {
+          margin-left: 0;
+        }
+      }
+      .sommaire__general {
+        grid-area: 2 / 1 / 3 / 2;
+        -webkit-animation: slide_left 1s ease 0s 1 normal forwards;
+        animation: slide_left 1s ease 0s 1 normal forwards;
+      }
+      .sommaire__legal {
+        grid-area: 2 / 2 / 3 / 3;
+        -webkit-animation: slide_bottom 1s ease 0s 1 normal forwards;
+        animation: slide_bottom 1s ease 0s 1 normal forwards;
+      }
+      .sommaire__illegal {
+        grid-area: 2 / 3 / 3 / 4;
+        -webkit-animation: slide_right 1s ease 0s 1 normal forwards;
+        animation: slide_right 1s ease 0s 1 normal forwards;
+      }
+    }
+  }
+  .section_reglement {
+    text-align: center;
+    .blur {
+      h2 {
+        margin-left: 0;
+        text-align: center;
+      }
+      .accordion {
+        &-category {
+          article {
+            h3 {
+              margin-left: 0;
+              text-align: center;
+            }
+            #lexique,
+            #mort-rp,
+            #coma,
+            #civil,
+            #ems,
+            #criminel,
+            #orga {
+              -webkit-animation: slide_right 1s ease 0s 1 normal forwards;
+              animation: slide_right 1s ease 0s 1 normal forwards;
+              + .unfold {
+                -webkit-animation: slide_right 1s ease 0s 1 normal forwards;
+                animation: slide_right 1s ease 0s 1 normal forwards;
+              }
+            }
+            #interdictions,
+            #zone-safe,
+            #lspd,
+            #entreprise,
+            #gangs {
+              -webkit-animation: slide_left 1s ease 0s 1 normal forwards;
+              animation: slide_left 1s ease 0s 1 normal forwards;
+              + .unfold {
+                -webkit-animation: slide_left 1s ease 0s 1 normal forwards;
+                animation: slide_left 1s ease 0s 1 normal forwards;
+              }
+            }
+            position: relative;
+            .unfold {
+              position: absolute;
+              top: 0;
+              right: 590px;
+              width: 30px;
+              height: 30px;
+              background-color: $bg;
+              border: 1px solid $cinq;
+              -webkit-box-shadow: 0;
+              box-shadow: none;
+              -ms-flex-item-align: center;
+              align-self: center;
+              cursor: pointer;
+              border-radius: 50px;
+              &:hover {
+                -webkit-transition: 400ms;
+                -o-transition: 400ms;
+                transition: 400ms;
+              }
+              &:active {
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+    &-div {
+      width: 60vw;
+      text-align: left;
+      margin: auto;
+    }
+  }
+  #anti-cheat {
+    display: none;
+  }
+}

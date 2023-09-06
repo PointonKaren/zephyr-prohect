@@ -1,0 +1,78 @@
+@import "../Utils/mixins";
+@import "../Utils/variables";
+
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 90%;
+    header {
+      background: none;
+      height: 80px;
+      h1 {
+        height: 100px;
+        line-height: 100px;
+        font-size: 1.8em;
+      }
+      nav {
+        width: 90%;
+        right: 20px;
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+    main {
+      section {
+        .blur {
+          h5 {
+            font-size: 1.1em;
+          }
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+      #guide-debutant {
+        .blur {
+          .border-bottom {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .section-staff {
+        .staff,
+        .staff-reversed {
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-evenly;
+          width: 90%;
+          h3 {
+            font-size: 1.3em;
+          }
+          img {
+            width: 50%;
+          }
+        }
+      }
+      #top-serveur {
+        .blur {
+          .top-serveur {
+            width: 85%;
+          }
+        }
+      }
+    }
+    footer {
+      .code-up {
+        bottom: 10px;
+        right: 3px;
+        .arrow-up-icon {
+          font-size: 0.9em;
+          margin: 5px 0;
+          padding: 0;
+          padding-left: 6px;
+          padding-right: 6px;
+        }
+      }
+    }
+  }
+}

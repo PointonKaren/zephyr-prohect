@@ -2,8 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Serveur GTA RP : Zephyr Project - Les infos" />
-    <!-- TODO: Modifier la description-->
+    <meta name="description" content="Serveur GTA RP : Zephyr Project - Voter sur top-serveur" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="icon" href="../style/images/icon.png" />
@@ -12,13 +11,70 @@
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <a href="../index.html"
+          ><i class="fa-solid fa-house ondesktop-hidden"></i
+          ><span class="onphone-hidden">Accueil</span>
+        </a>
+        <a href="../html/infos.html"
+          ><i class="fa-solid fa-circle-info ondesktop-hidden"></i
+          ><span class="onphone-hidden">Infos</span></a
+        >
+        <a href="../html/reglement.html"
+          ><i class="fa-solid fa-book ondesktop-hidden"></i
+          ><span class="onphone-hidden">Règlement</span></a
+        >
+        <ul class="onphone-hidden">
+          <li><a href="../html/reglement.html#general">Général</a></li>
+          <li><a href="../html/reglement.html#legal">Légal</a></li>
+          <li><a href="../html/reglement.html#illegal">Illégal</a></li>
+        </ul>
+        <a href="../html/staff.html"
+          ><i class="fa-solid fa-users ondesktop-hidden"></i
+          ><span class="onphone-hidden">Le staff</span></a
+        >
+        <a href="../html/top-serveur.html"
+          ><i class="fa-solid fa-check-to-slot ondesktop-hidden"></i
+          ><span class="onphone-hidden">Top Serveur</span></a
+        >
+      </nav>
       <h1>Top-Serveur</h1>
     </header>
-    <section>
-      <p>Lorem, ipsum dolor.</p>
-    </section>
-    <footer></footer>
+    <main>
+      <section id="top-serveur">
+        <div class="blur">
+          <h2>À quoi sert Top-Serveur ?</h2>
+          <p>
+            Le site Top-Serveur recense les serveurs RP, ce qui permet de faire découvrir aux
+            joueurs les serveurs disponibles les plus appréciés.
+            <br />En votant régulièrement, vous permettez à Zephyr Project d'avoir un meilleur
+            référencement et donc, de pouvoir agrandir notre communauté ! <br />Un clic = un vote...
+            et c'est totalement gratuit ! <span class="smiley">😁</span>
+          </p>
+          <h3 class="important">Nous avons besoin de vous !</h3>
+          <span class="top-serveur">
+            <a
+              href="https://top-serveurs.net/gta/zephyr-project"
+              target="_blank"
+              title="Voter pour Zephyr Project sur Top-Serveur"
+              >Soutenir Zephyr Project !</a
+            >
+          </span>
+        </div>
+      </section>
+      <!-- TODO : Voir avec Tof pour récupérer données top-serveur via API https://api.top-serveurs.net/documentation#api-Serveur-Get_server_s_players_ranking -->
+    </main>
+    <footer>
+      <a
+        aria-label="Bouton pour remonter en haut de la page"
+        class="code-up onphone-hidden"
+        onclick="goToTop()"
+        role="button"
+      >
+        <i class="fa-solid fa-arrow-up arrow-up-icon"></i>
+      </a>
+    </footer>
     <script src="../js/common.js"></script>
+    <!-- <script src="../js/top-serveur.js"></script> -->
   </body>
 </html>

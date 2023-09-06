@@ -3,4 +3,40 @@
 
 * {
   color: $text;
+  text-shadow: 3px 3px 5px $textshadow;
+}
+h1,
+h2 {
+  color: $huit;
+  text-shadow: 0px 0px 50px $quatre;
+}
+h3 {
+  color: $cinq;
+  text-shadow: 0px 0px 40px $cinq;
+}
+h4 {
+  color: $un;
+  text-shadow: 0px 0px 40px $un;
+}
+
+.important {
+  color: $cinq;
+  text-shadow: 3px 3px 5px $sept;
+  text-decoration: none;
+}
+
+// Page règlement
+.sommaire__tile {
+  h3 {
+    color: $huit;
+    text-shadow: 3px 3px 5px $quatre;
+    // text-shadow: 0px 0px 25px $quatre;
+  }
+}
+
+.unfold {
+  i {
+    text-shadow: none;
+    color: $un;
+  }
 }

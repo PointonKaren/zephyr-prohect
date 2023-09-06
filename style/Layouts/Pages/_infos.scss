@@ -1,0 +1,22 @@
+@import "../../Utils/variables";
+@import "../../Utils/mixins";
+
+body {
+  main {
+    section {
+      .blur {
+        .fa-discord {
+          border: 1px solid $discord;
+          background-color: $discord;
+          border-radius: 50px;
+          color: white;
+          padding-left: 6px;
+          padding-right: 6px;
+          padding-top: 7px;
+          padding-bottom: 8px;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Serveur GTA RP : Zephyr Project" />
-    <!-- TODO: Modifier la description-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="icon" href="./style/images/icon.png" />
@@ -12,12 +11,88 @@
   </head>
   <body>
     <header>
+      <nav>
+        <a href="index.html"
+          ><i class="fa-solid fa-house ondesktop-hidden"></i
+          ><span class="onphone-hidden">Accueil</span>
+        </a>
+        <a href="html/infos.html"
+          ><i class="fa-solid fa-circle-info ondesktop-hidden"></i
+          ><span class="onphone-hidden">Infos</span></a
+        >
+        <a href="html/reglement.html"
+          ><i class="fa-solid fa-book ondesktop-hidden"></i
+          ><span class="onphone-hidden">Règlement</span></a
+        >
+        <ul class="onphone-hidden">
+          <li><a href="html/reglement.html#general">Général</a></li>
+          <li><a href="html/reglement.html#legal">Légal</a></li>
+          <li><a href="html/reglement.html#illegal">Illégal</a></li>
+        </ul>
+        <a href="html/staff.html"
+          ><i class="fa-solid fa-users ondesktop-hidden"></i
+          ><span class="onphone-hidden">Le staff</span></a
+        >
+        <a href="html/top-serveur.html"
+          ><i class="fa-solid fa-check-to-slot ondesktop-hidden"></i
+          ><span class="onphone-hidden">Top Serveur</span></a
+        >
+      </nav>
       <h1>Zephyr Project</h1>
     </header>
-    <section>
-      <p>Lorem, ipsum dolor.</p>
-    </section>
-    <footer></footer>
+    <main>
+      <section>
+        <div class="blur">
+          <h2>Zephyr Project - serveur GTA RP</h2>
+          <div id="index-box">
+            <img
+              src="./style/images/background-index.jpg"
+              alt="Background de l'écran de chargement du serveur"
+            />
+            <div>
+              <p>
+                Zephyr Project est un serveur <span class="important">RP</span> (pour Role Play)
+                <span class="important">whitelist</span> créé par des joueurs, pour des joueurs.
+              </p>
+              <p>
+                Notre volonté principale ? Privilégier au maximum les scènes en jeu, afin de créer
+                la <span class="important">meilleure immersion possible</span> pour tous.
+              </p>
+              <p>
+                Des scripts <span class="important">originaux</span>, un staff
+                <span class="important">présent, actif et à l'écoute</span>, une liberté
+                <span class="important">quasi-totale</span> dans le RP - à quelques exceptions
+                près... <br />De nombreux ingrédients sont réunis afin de vous permettre de jouer
+                <span class="important">votre jeu</span> et profiter de
+                <span class="important">votre expérience</span> !
+              </p>
+            </div>
+          </div>
+          <h2>Une seule limite à ton expérience... ton imagination !</h2>
+          <p id="index-paragraph">
+            Alors... qu'attends-tu pour nous rejoindre sur notre
+            <a
+              href="https://discord.gg/BgYyvPYaGr"
+              title="Serveur Discord de Zephyr Project"
+              target="_blank"
+              class="important"
+              >Discord <i class="fa-brands fa-discord"></i
+            ></a>
+            ?!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a
+        aria-label="Bouton pour remonter en haut de la page"
+        class="code-up"
+        onclick="goToTop()"
+        role="button"
+      >
+        <i class="fa-solid fa-arrow-up arrow-up-icon"></i>
+      </a>
+    </footer>
     <script src="./js/common.js"></script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+@import "../../Utils/variables";
+@import "../../Utils/mixins";
+
+body {
+  main {
+    section {
+      .blur {
+        h2 {
+          text-align: center;
+        }
+        #index-paragraph {
+          text-align: center;
+        }
+        #index-box {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin: auto;
+          width: 90%;
+          img {
+            border: 1px solid $border;
+            -webkit-box-shadow: 0 0 20px $border-shadow;
+            box-shadow: 0 0 20px $border-shadow;
+          }
+        }
+      }
+    }
+  }
+}

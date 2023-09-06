@@ -1,0 +1,18 @@
+@import "../Utils/mixins";
+@import "../Utils/variables";
+
+@media screen and (min-width: 2000px) {
+  body {
+    header {
+      border: 1px solid $border;
+      border-top: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      nav {
+        a {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

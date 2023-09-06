@@ -1,0 +1,41 @@
+@import "../../Utils/variables";
+@import "../../Utils/mixins";
+
+body {
+  main {
+    #top-serveur {
+      .blur {
+        padding-bottom: 20px;
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        h3 {
+          text-align: center;
+          margin: 0;
+          margin-bottom: 20px;
+          text-shadow: none;
+        }
+        .top-serveur {
+          display: block;
+          text-align: center;
+          margin: auto;
+          height: 40px;
+          line-height: 40px;
+          width: 250px;
+          border: 1px solid $border;
+          border-radius: 50px;
+          background-color: $bg;
+          -webkit-box-shadow: 0 0 20px $border-shadow;
+          box-shadow: 0 0 20px $border-shadow;
+          font-size: 1.2em;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

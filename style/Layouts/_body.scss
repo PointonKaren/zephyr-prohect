@@ -1,8 +1,64 @@
 @import "../Utils/mixins";
 @import "../Utils/variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  // border: 1px solid $primaire;
   margin: 0;
+  background: url(./images/logo.png) fixed no-repeat center;
+  margin-bottom: 50px;
   background-color: $bg;
+  .ondesktop-hidden {
+    display: none;
+  }
+  main {
+    section {
+      width: 80vw;
+      max-width: 1400px;
+      margin: auto;
+      margin-top: 30px;
+      background: url(./images/vinewood.jpg);
+      @include background-img;
+      border: 1px solid $border;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 0 20px $border-shadow;
+      box-shadow: 0 0 20px $border-shadow;
+      .blur {
+        @include blur;
+        padding-top: 2px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        .smiley {
+          text-shadow: none;
+        }
+      }
+      h2 {
+        margin-left: 20px;
+        font-size: 2em;
+      }
+      h3 {
+        margin-left: 40px;
+        font-size: 1.5em;
+      }
+      h4 {
+        margin-left: 50px;
+        font-size: 1.2em;
+      }
+      h5 {
+        margin-left: 60px;
+        font-size: 1em;
+      }
+      p {
+        margin-left: 30px;
+        font-size: 1.2em;
+      }
+      ul {
+        li {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
 }
