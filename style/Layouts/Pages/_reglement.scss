@@ -97,7 +97,7 @@ main {
               background-color: $bg;
               border: 1px solid $cinq;
               -webkit-box-shadow: 0;
-              box-shadow: 0;
+              box-shadow: none;
               -ms-flex-item-align: center;
               align-self: center;
               cursor: pointer;

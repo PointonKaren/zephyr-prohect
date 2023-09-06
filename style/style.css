@@ -108,7 +108,7 @@ footer .code-up {
   cursor: pointer;
   border-radius: 50px;
   border: 1px solid #7fd6f9;
-  box-shadow: 0;
+  box-shadow: none;
 }
 footer .code-up .arrow-up-icon {
   font-size: 1.2em;
@@ -285,7 +285,7 @@ main .section_reglement .blur .accordion-category article .unfold {
   height: 30px;
   background-color: #0e0e47;
   border: 1px solid #b2b1f0;
-  box-shadow: 0;
+  box-shadow: none;
   align-self: center;
   cursor: pointer;
   border-radius: 50px;
