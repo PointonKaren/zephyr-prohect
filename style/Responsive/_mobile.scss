@@ -2,23 +2,7 @@
 @import "../Utils/variables";
 
 @media screen and (max-width: 600px) {
-  // footer {
-  //   #footer-copyright {
-  //     .copyright-text {
-  //       display: none;
-  //     }
-  //     .copyright-logo {
-  //       display: inline;
-  //     }
-  //   }
-  // }
   body {
-    .onphone-hidden {
-      display: none;
-    }
-    .ondesktop-hidden {
-      display: inline;
-    }
     background-size: 90%;
     header {
       background: none;
@@ -39,37 +23,10 @@
     main {
       section {
         .blur {
-          h2,
-          h3,
-          h4,
-          h5,
-          p {
-            margin: 0;
-            padding-bottom: 10px;
-          }
-          h2,
-          h3,
-          h4,
-          h5 {
-            text-align: center;
-          }
-          h2 {
-            margin-top: 10px;
-            font-size: 1.5em;
-          }
-          h3 {
-            font-size: 1.4em;
-          }
-          h4 {
-            font-size: 1.3em;
-          }
           h5 {
             font-size: 1.1em;
           }
           p {
-            margin: auto;
-            padding-left: 8px;
-            padding-right: 8px;
             font-size: 1em;
           }
         }
@@ -77,26 +34,43 @@
       #guide-debutant {
         .blur {
           .border-bottom {
-            border-bottom: 1px dotted $border;
-            padding-bottom: 15px;
             margin-bottom: 10px;
-          }
-          img {
-            width: 20px;
           }
         }
       }
-      #anti-cheat {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        padding: 0;
+      .section-staff {
+        .staff,
+        .staff-reversed {
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-evenly;
+          width: 90%;
+          h3 {
+            font-size: 1.3em;
+          }
+          img {
+            width: 50%;
+          }
+        }
+      }
+      #top-serveur {
         .blur {
-          padding-bottom: 0;
+          .top-serveur {
+            width: 85%;
+          }
+        }
+      }
+    }
+    footer {
+      .code-up {
+        bottom: 10px;
+        right: 3px;
+        .arrow-up-icon {
+          font-size: 0.9em;
+          margin: 5px 0;
+          padding: 0;
+          padding-left: 6px;
+          padding-right: 6px;
         }
       }
     }

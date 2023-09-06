@@ -16,20 +16,6 @@ const createElement = (elementType, elementParent, attributes = [], textContent 
   return element;
 };
 
-//* Footer commun à toutes les pages
-let footer = document.querySelector("footer");
-// const createFooter = () => {
-//   createElement(
-//     "p",
-//     footer,
-//     [{ name: "id", value: "footer-copyright" }],
-//     `
-//     <span class="copyright-text"><span class="copyright">©</span> Copyright</span>
-//     <span class="copyright-logo">©</span> TinyNerak pour Zephyr Project - Tous droits réservés
-//     `
-//   );
-// };
-
 //* Permet de rendre fonctionnelle la flèche "up"
 // Quand on clique sur le bouton (cf onclick html), on remonte au "top" défini ci-dessous :
 const goToTop = () => {

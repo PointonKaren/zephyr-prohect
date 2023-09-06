@@ -5,10 +5,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: $bg-footer;
   border-top: 3px solid $border;
-  // border-top-left-radius: 20px;
-  // border-top-right-radius: 20px;
   -webkit-box-shadow: 0 -2px 15px $border;
   box-shadow: 0 -2px 15px $border;
   .code-up {
@@ -28,15 +25,6 @@ footer {
       padding-right: 9px;
       margin: 10px 3px;
       text-shadow: none;
-    }
-  }
-  #footer-copyright {
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    .copyright-logo {
-      display: none;
     }
   }
 }

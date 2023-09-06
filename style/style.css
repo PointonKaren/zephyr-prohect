@@ -50,6 +50,7 @@ body .ondesktop-hidden {
 }
 body main section {
   width: 80vw;
+  max-width: 1400px;
   margin: auto;
   margin-top: 30px;
   background: url(./images/vinewood.jpg);
@@ -97,7 +98,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #18187a;
   border-top: 3px solid #7fd6f9;
   box-shadow: 0 -2px 15px #7fd6f9;
 }
@@ -118,15 +118,6 @@ footer .code-up .arrow-up-icon {
   padding-right: 9px;
   margin: 10px 3px;
   text-shadow: none;
-}
-footer #footer-copyright {
-  margin: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-}
-footer #footer-copyright .copyright-logo {
-  display: none;
 }
 
 header {
@@ -178,16 +169,16 @@ header nav ul li {
 body main section .blur h2 {
   text-align: center;
 }
-body main section .blur .index-paragraph {
+body main section .blur #index-paragraph {
   text-align: center;
 }
-body main section .blur .index-box {
+body main section .blur #index-box {
   display: flex;
   align-items: center;
   margin: auto;
   width: 90%;
 }
-body main section .blur .index-box img {
+body main section .blur #index-box img {
   border: 1px solid #7fd6f9;
   box-shadow: 0 0 20px #4485e2;
 }
@@ -289,7 +280,7 @@ main .section_reglement .blur .accordion-category article #gangs + .unfold {
 main .section_reglement .blur .accordion-category article .unfold {
   position: absolute;
   top: 0;
-  right: 620px;
+  right: 590px;
   width: 30px;
   height: 30px;
   background-color: #0e0e47;
@@ -370,15 +361,20 @@ body main #top-serveur .blur .top-serveur a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 2000px) {
+  body header {
+    border: 1px solid #7fd6f9;
+    border-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  body header nav a {
+    font-size: 1.4em;
+  }
+}
 @media screen and (max-width: 600px) {
   body {
     background-size: 90%;
-  }
-  body .onphone-hidden {
-    display: none;
-  }
-  body .ondesktop-hidden {
-    display: inline;
   }
   body header {
     background: none;
@@ -395,6 +391,58 @@ body main #top-serveur .blur .top-serveur a {
   }
   body header nav a {
     font-size: 1em;
+  }
+  body main section .blur h5 {
+    font-size: 1.1em;
+  }
+  body main section .blur p {
+    font-size: 1em;
+  }
+  body main #guide-debutant .blur .border-bottom {
+    margin-bottom: 10px;
+  }
+  body main .section-staff .staff,
+  body main .section-staff .staff-reversed {
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  body main .section-staff .staff h3,
+  body main .section-staff .staff-reversed h3 {
+    font-size: 1.3em;
+  }
+  body main .section-staff .staff img,
+  body main .section-staff .staff-reversed img {
+    width: 50%;
+  }
+  body main #top-serveur .blur .top-serveur {
+    width: 85%;
+  }
+  body footer .code-up {
+    bottom: 10px;
+    right: 3px;
+  }
+  body footer .code-up .arrow-up-icon {
+    font-size: 0.9em;
+    margin: 5px 0;
+    padding: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: 60%;
+  }
+  body .onphone-hidden {
+    display: none;
+  }
+  body .ondesktop-hidden {
+    display: inline;
+  }
+  body header nav {
+    width: 50vw;
+    max-width: 400px;
+    margin: auto;
   }
   body main section .blur h2,
   body main section .blur h3,
@@ -413,26 +461,38 @@ body main #top-serveur .blur .top-serveur a {
   body main section .blur h2 {
     margin-top: 10px;
     font-size: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   body main section .blur h3 {
     font-size: 1.4em;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
   }
   body main section .blur h4 {
     font-size: 1.3em;
+    padding-top: 5px;
   }
   body main section .blur h5 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   body main section .blur p {
     margin: auto;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.1em;
+  }
+  body main #index-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  body main #index-box img {
+    width: 70vw;
   }
   body main #guide-debutant .blur .border-bottom {
     border-bottom: 1px dotted #7fd6f9;
     padding-bottom: 15px;
-    margin-bottom: 10px;
   }
   body main #guide-debutant .blur img {
     width: 20px;
