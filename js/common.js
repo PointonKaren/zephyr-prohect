@@ -69,7 +69,7 @@ for (let unfold of unfolds) {
   if (window.innerWidth >= 1201 && window.innerWidth <= 1500) {
     unfold.style.right = "450px";
   } else {
-    unfold.style.right = "590px";
+    unfold.style.right = "510px";
   }
 }
 
