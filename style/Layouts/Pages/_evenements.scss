@@ -4,52 +4,56 @@
 body {
   main {
     #futureEvents {
-      .neonText {
-        font-size: 42px;
-        color: $deux;
-        text-shadow: 0 0 7px $deux, 0 0 10px $deux, 0 0 21px $deux, 0 0 42px $sept, 0 0 82px $sept,
-          0 0 92px $sept, 0 0 102px $sept, 0 0 151px $sept;
-        margin-left: 0;
-        text-align: center;
+      .blur {
+        .neonText {
+          font-size: 42px;
+          color: $deux;
+          text-shadow: 0 0 7px $deux, 0 0 10px $deux, 0 0 21px $deux, 0 0 42px $sept, 0 0 82px $sept,
+            0 0 92px $sept, 0 0 102px $sept, 0 0 151px $sept;
+          margin-left: 0;
+          text-align: center;
+        }
       }
     }
-    .blur {
-      .events {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        .event {
-          width: 500px;
+    section {
+      .blur {
+        .events {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          gap: 10px;
-          &-title {
-            color: $cinq;
-            text-shadow: 0 0 7px $quatre, 0 0 10px $quatre, 0 0 21px $quatre, 0 0 42px $sept,
-              0 0 82px $huit, 0 0 92px $huit, 0 0 102px $huit, 0 0 151px $huit;
-            margin: 0;
-          }
-          &-paragraph {
-            margin: 0;
-          }
-          img {
-            width: 400px;
-            border: 1px solid $border;
-            -webkit-box-shadow: 0 0 20px $border-shadow;
-            box-shadow: 0 0 20px $border-shadow;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          .event {
+            width: 500px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 10px;
+            &-title {
+              color: $cinq;
+              text-shadow: 0 0 7px $quatre, 0 0 10px $quatre, 0 0 21px $quatre, 0 0 42px $sept,
+                0 0 82px $huit, 0 0 92px $huit, 0 0 102px $huit, 0 0 151px $huit;
+              margin: 0;
+            }
+            &-paragraph {
+              margin: 0;
+            }
+            img {
+              width: 400px;
+              border: 1px solid $border;
+              -webkit-box-shadow: 0 0 20px $border-shadow;
+              box-shadow: 0 0 20px $border-shadow;
+            }
           }
         }
       }

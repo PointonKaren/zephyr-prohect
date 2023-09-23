@@ -166,34 +166,34 @@ header nav ul li {
   list-style: none;
 }
 
-body main #futureEvents .neonText {
+body main #futureEvents .blur .neonText {
   font-size: 42px;
   color: #5fc8fa;
   text-shadow: 0 0 7px #5fc8fa, 0 0 10px #5fc8fa, 0 0 21px #5fc8fa, 0 0 42px #4747c5, 0 0 82px #4747c5, 0 0 92px #4747c5, 0 0 102px #4747c5, 0 0 151px #4747c5;
   margin-left: 0;
   text-align: center;
 }
-body main .blur .events {
+body main section .blur .events {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-body main .blur .events .event {
+body main section .blur .events .event {
   width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-body main .blur .events .event-title {
+body main section .blur .events .event-title {
   color: #b2b1f0;
   text-shadow: 0 0 7px #6a6ad2, 0 0 10px #6a6ad2, 0 0 21px #6a6ad2, 0 0 42px #4747c5, 0 0 82px #8685de, 0 0 92px #8685de, 0 0 102px #8685de, 0 0 151px #8685de;
   margin: 0;
 }
-body main .blur .events .event-paragraph {
+body main section .blur .events .event-paragraph {
   margin: 0;
 }
-body main .blur .events .event img {
+body main section .blur .events .event img {
   width: 400px;
   border: 1px solid #7fd6f9;
   box-shadow: 0 0 20px #4485e2;
@@ -449,6 +449,17 @@ body main #top-serveur .blur .top-serveur a {
   }
   body main #top-serveur .blur .top-serveur {
     width: 85%;
+  }
+  body main #futureEvents .blur .neonText {
+    font-size: 25px;
+  }
+  body main #futureEvents .blur .events .event,
+  body main #passedEvents .blur .events .event {
+    width: 200px;
+  }
+  body main #futureEvents .blur .events .event img,
+  body main #passedEvents .blur .events .event img {
+    width: 200px;
   }
   body footer .code-up {
     bottom: 10px;
