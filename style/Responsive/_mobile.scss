@@ -60,6 +60,26 @@
           }
         }
       }
+      #futureEvents {
+        .blur {
+          .neonText {
+            font-size: 25px;
+          }
+        }
+      }
+      #futureEvents,
+      #passedEvents {
+        .blur {
+          .events {
+            .event {
+              width: 200px;
+              img {
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
     }
     footer {
       .code-up {
