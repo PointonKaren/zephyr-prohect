@@ -1,0 +1,17 @@
+@import "../../Utils/variables";
+@import "../../Utils/mixins";
+
+body {
+  main {
+    #events {
+      .neonText {
+        font-size: 42px;
+        color: $deux;
+        text-shadow: 0 0 7px $deux, 0 0 10px $deux, 0 0 21px $deux, 0 0 42px $sept, 0 0 82px $sept,
+          0 0 92px $sept, 0 0 102px $sept, 0 0 151px $sept;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -84,3 +84,15 @@
     transform: translateX(0);
   }
 }
+
+@-webkit-keyframes typing {
+  to {
+    width: 3em; /* Largeur des points de suspension */
+  }
+}
+
+@keyframes typing {
+  to {
+    width: 3em; /* Largeur des points de suspension */
+  }
+}
