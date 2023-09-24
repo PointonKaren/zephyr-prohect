@@ -26,6 +26,10 @@ body {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          margin-bottom: 20px;
+          gap: 30px;
           .event {
             width: 500px;
             display: -webkit-box;
